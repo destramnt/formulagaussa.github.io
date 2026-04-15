@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+
+    /* градиент-обои */
+    background: linear-gradient(120deg, 
+        #314A73,   /* синий */
+        #6F94BF,   /* голубой */
+        #9ec5ff,   /* светло-голубой */
+        #314A73    /* синий */
+    );
+    background-size: cover; /* чтобы растянуть на весь экран */
+}
+
+/* основной блок */
+.container{
+background:#DCEAFC;
+padding:30px;
+border-radius:15px;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+width:1200px;
+}
+
+/* заголовок */
+h1{
+margin-bottom:30px;
+color:#314A73;
+text-align:center;
+font-weight:bold;
+}
+
+/* кнопки */
+button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+background:#314A73;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1f3558;
+}
+
+/* поля */
+input{
+padding:8px;
+margin:5px;
+width:70px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+/* холст */
+canvas{
+margin-top:20px;
+border:2px solid #ddd;
+border-radius:10px;
+background:white;
+display:block;
+margin:20px auto;
+}
+
+/* ПРАВАЯ ПАНЕЛЬ */
+.info{
+width:350px;
+background:linear-gradient(160deg,#314A73,#6F94BF);
+color:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 20px 40px rgba(0,0,0,0.25);
+height:fit-content;
+}
+
+/* ссылки видео */
+.info a{
+display:block;
+margin-top:10px;
+padding:10px;
+background:rgba(255,255,255,0.2);
+border-radius:8px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.info a:hover{
+background:rgba(255,255,255,0.35);
+}
+/* структура внутри контейнера */
+.layout{
+display:flex;
+gap:30px;
+align-items:flex-start;
+}
+
+/* левая часть */
+.left{
+width:250px;
+}
+
+/* центр */
+.center{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* фиксируем сетку */
+canvas{
+border:2px solid #ddd;
+border-radius:10px;
+background:white;
+}
+/* карточка с Гауссом */
+.gauss-card{
+margin-top:20px;
+background:linear-gradient(160deg,#ffffff,#d9e8ff);
+padding:15px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* картинка */
+.gauss-card img{
+width:100%;
+border-radius:10px;
+}
+
+/* подпись */
+.gauss-caption{
+margin-top:10px;
+font-weight:bold;
+color:#314A73;
+font-size:16px;
+}
+/* плавная анимация кнопок */
+button{
+padding:10px 15px;
+border:none;
+border-radius:8px;
+background:#314A73;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* наведение */
+button:hover{
+background:#1f3558;
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* нажатие */
+button:active{
+transform:scale(0.95);
+}
+/* слайдер масштаба */
+.scale-control{
+    margin-top: 15px;
+    text-align:center;
+    color:#314A73;
+}
+#scaleSlider{
+    width:200px;
+    margin-left:10px;
+}
+
+/* история построений */
+.history{
+    margin-top:20px;
+    background:#eef4ff;
+    padding:15px;
+    border-radius:10px;
+    max-height:200px;
+    overflow-y:auto;
+}
+.history h3{
+    margin-top:0;
+}
+.history ul{
+    list-style:none;
+    padding-left:10px;
+}
+
+/* подсветка вершин */
+.hover-point{
+    stroke:#e53e3e;
+    fill:#ff8080;
+    r:7;
+}
+
+button {
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #052C70, #052C70);
+}
